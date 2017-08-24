@@ -1,0 +1,38 @@
+body{
+  text-align: center;
+}
+div.box{
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+}
+div.red{
+  background-color: red;
+}
+div.green{
+  background-color: green;
+}
+div.yellow{
+  background-color: yellow;
+}
+div.pink{
+  background-color: pink;
+}
+@media (max-width:600px) {
+  div.yellow, div.pink {
+    display: none;
+  }
+  /*div.pink{
+    display: none;
+  }*/
+}
+@media (min-width:1000px) {
+  div.box{
+    width: 100%;
+    height: 169px;
+  }
+  p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
